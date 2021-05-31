@@ -20,6 +20,32 @@
 </head>
 
 <body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102499061513849");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="r49ibJJ6"></script>
     <!-- Preloader -->
@@ -81,7 +107,7 @@
                                             <li><a href="hp.html">HP Laptops</a></li>
                                             <li><a href="dell.html">Dell Laptops</a></li>
                                             <li><a href="toshiba.html">Toshiba Laptops</a></li>
-                                            <li><a href="lenovo.html">Lenova Laptops</a></li>
+                                            <li><a href="lenovo.html">Lenov0 Laptops</a></li>
                                             <li><a href="acer.html">Acer Laptops</a></li>
                                         </ul>
                                         <ul class="single-mega cn-col-4">
@@ -89,7 +115,7 @@
                                            <li><a href="hpdesk.html">HP Desktops</a></li>
                                             <li><a href="delldesk.html">Dell Desktops</a></li>
                                             <li><a href="toshibadesk.html">Toshiba Desktops</a></li>
-                                            <li><a href="lenovodesk.html">Lenova Desktops</a></li>
+                                            <li><a href="lenovodesk.html">Lenovo Desktops</a></li>
                                             <li><a href="acerdesk.html">Acer Desktops</a></li>
                                         </ul>
                                         <ul class="single-mega cn-col-4">
@@ -102,17 +128,18 @@
                                         </ul>
                                         <ul class="single-mega cn-col-4">
                                             <li class="title"><b style="color: red">PROMOTIONS</b></li>
-                                            <li><a href="book.html">books Branding</a></li>
+                                            <li><a href="cloth.html">Cloths Branding</a></li>
                                             <li><a href="bottle.html">Bottles Branding</a></li>
                                             <li><a href="cups.html">Cups Branding</a></li>
+                                            <li><a href="books.html">Books Branding</a></li>
                                             <li><a href="banner.html">Banners Branding</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="contact.html">Contact</a></li>
+                                <li><a href="https://elitecomp.co.ke:2083/" style="color: red">Staff Mails</a></li>
                             </ul>
-
                             <!-- Search Form -->
                             <div class="south-search-form">
                                 <form action="#" method="post">
@@ -346,7 +373,7 @@
                             <p>
                                 Elitecomputers & Branding provides:<br> ✔️Brand New,Certified Factory Refurb and Exuk desktops with Warranty <br>✔️Full set Desktops: CPU,Monitor,Keyboard and mouse. <br>✔️BrandNew phones with ......
 
-                               <div class="fb-page" data-href="https://www.facebook.com/elitetech001" data-tabs="timeline" data-width="" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/elitetech001" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/elitetech001">Elitetech computer solutions</a></blockquote></div>
+                               <div class="fb-page" data-href="https://www.facebook.com/elitetech001" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/elitetech001" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/elitetech001">Elitetech computer solutions</a></blockquote></div>
                             </p>
                         </div>
                     </div>

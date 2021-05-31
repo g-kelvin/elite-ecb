@@ -20,6 +20,33 @@
 </head>
 
 <body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102499061513849");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
 	<div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="r49ibJJ6"></script>
 
@@ -77,7 +104,7 @@
                                             <li><a href="hp.html">HP Laptops</a></li>
                                             <li><a href="dell.html">Dell Laptops</a></li>
                                             <li><a href="toshiba.html">Toshiba Laptops</a></li>
-                                            <li><a href="lenovo.html">Lenova Laptops</a></li>
+                                            <li><a href="lenovo.html">Lenov0 Laptops</a></li>
                                             <li><a href="acer.html">Acer Laptops</a></li>
                                         </ul>
                                         <ul class="single-mega cn-col-4">
@@ -85,7 +112,7 @@
                                            <li><a href="hpdesk.html">HP Desktops</a></li>
                                             <li><a href="delldesk.html">Dell Desktops</a></li>
                                             <li><a href="toshibadesk.html">Toshiba Desktops</a></li>
-                                            <li><a href="lenovodesk.html">Lenova Desktops</a></li>
+                                            <li><a href="lenovodesk.html">Lenovo Desktops</a></li>
                                             <li><a href="acerdesk.html">Acer Desktops</a></li>
                                         </ul>
                                         <ul class="single-mega cn-col-4">
@@ -108,6 +135,7 @@
                                 </li>
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="contact.html">Contact</a></li>
+                                <li><a href="https://elitecomp.co.ke:2083/" style="color: red">Staff Mails</a></li>
                             </ul>
 
                             <!-- Search Form -->
@@ -189,21 +217,21 @@
                                 <span>New</span>
                             </div>
                             <div class="list-price">
-                                <p>Ksh. 45,000</p>
+                                <p>Ksh. 30,000</p>
                             </div>
                         </div>
                         <!-- Property Content -->
                         <div class="property-content">
-                            <h5>Hp Elite 840 Laptop</h5>
+                            <h5>HP Elitebook Folio 9470m</h5>
                             <div class="row">
                                 <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
-                                <small>Color: Black</small>
+                                <small>RAM: 4GB</small> <br>
+                                <small>ROM: 500GB</small><br>
+                                <small>Color: Grey</small>
                             </div>
                                 <div class="col-6">
-                                    <small>Processor: Core i3</small><br>
-                                    <small>Graphics: Radeon</small><br>
+                                    <small>Processor: Core i5</small><br>
+                                    <small>Graphics: HD 4000</small><br>
                                     <small>Size: 14"</small>
                                 </div>
                               </div>
@@ -229,17 +257,17 @@
                         </div>
                         <!-- Property Content -->
                         <div class="property-content">
-                            <h5>HP Probook Laptops</h5>
+                            <h5>HP Elitebook 840</h5>
                             
                               <div class="row">
                                 <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small>
-                                <small>Color: Black</small>
+                                <small>RAM: 4GB</small> <br>
+                                <small>ROM: 500GB</small><br>
+                                <small>Color: Black</small><br>
                             </div>
                                 <div class="col-6">
-                                    <small>Processor: Core i3</small>
-                                    <small>Graphics: Radeon</small>
+                                    <small>Processor: Core i3</small><br>
+                                    <small>Graphics: Radeon</small><br>
                                     <small>Size: 14"</small>
                                 </div>
                               </div>
@@ -266,18 +294,18 @@
                         </div>
                         <!-- Property Content -->
                          <div class="property-content">
-                            <h5>HP Probook Laptops</h5>
+                            <h5>HP ProBook 450 G7 Notebook PC</h5>
                             
                               <div class="row">
                                 <div class="col-6">
                                 <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small>
-                                <small>Color: Black</small>
+                                <small>ROM: 500GB</small><br>
+                                <small>Color: Black/Red</small>
                             </div>
                                 <div class="col-6">
-                                    <small>Processor: Core i3</small>
-                                    <small>Graphics: Radeon</small>
-                                    <small>Size: 14"</small>
+                                    <small>Processor: Core i5</small><br>
+                                    <small>Graphics: Itel 4000</small><br>
+                                    <small>Size: 15.6"</small>
                                 </div>
                               </div>
                               <!-- end -->
@@ -305,14 +333,14 @@
                             <h5>Complete HP Desktop</h5>
                             <div class="row">
                                 <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
+                                <small>RAM: 4GB</small> <br>
+                                <small>ROM: 500GB</small><br>
                                 <small>Color: Black</small>
                             </div>
                                 <div class="col-6">
                                     <small>Processor: Core i3</small><br>
-                                    <small>Graphics: Radeon</small><br>
-                                    <small>Size: 14"</small>
+                                    <small>Graphics: Intel 4000</small><br>
+                                    <small>Size: 22"</small>
                                 </div>
                               </div>
                                <a href="https://wa.me/+254717040531" class="fa fa-whatsapp" style="font-size:24px;color:green"><button type="button" class="btn btn-danger">Place Order</button></a>
@@ -331,7 +359,7 @@
                                 <span>New</span>
                             </div>
                             <div class="list-price">
-                                <p>Ksh. 15,000</p>
+                                <p>Ksh. 10,000</p>
                             </div>
                         </div>
                         <!-- Property Content -->
@@ -340,14 +368,14 @@
                             
                               <div class="row">
                                 <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
+                                <small>RAM: 4GB</small> <br>
                                 <small>ROM: 500GBM</small>
                                 <small>Color: Black</small>
                             </div>
                                 <div class="col-6">
                                     <small>Processor: Core i3</small>
-                                    <small>Graphics: Radeon</small>
-                                    <small>Size: 14"</small>
+                                    <small>Graphics: Intel 4000</small>
+                                    <small>Type: Refub</small>
                                 </div>
                               </div>
                               <!-- end -->
@@ -368,23 +396,22 @@
                                 <span>New</span>
                             </div>
                             <div class="list-price">
-                                <p>Ksh 10,000</p>
+                                <p>Ksh 8,000</p>
                             </div>
                         </div>
                         <!-- Property Content -->
                          <div class="property-content">
-                            <h5>Dell Monitor</h5>
+                            <h5>Dell Full HD 1080p Monitor</h5>
                             
                               <div class="row">
                                 <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small>
+                                <small>Model: S2421HN</small> <br>
+                                <small>LED: Edgelight System</small>
                                 <small>Color: Black</small>
                             </div>
                                 <div class="col-6">
-                                    <small>Processor: Core i3</small>
-                                    <small>Graphics: Radeon</small>
-                                    <small>Size: 14"</small>
+                                    <small>Resolution: 1920×1080 at 75Hz</small>
+                                    <small>Ports: VGA/HDMI</small>
                                 </div>
                               </div>
                               <!-- end -->
@@ -562,6 +589,7 @@
     <!-- ##### Testimonials Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
+   <!-- <a href="m.me/softwaretechnologykenya">Messenger</a> -->
     <footer class="footer-area section-padding-100-0 bg-img gradient-background-overlay" style="background-image: url(img/bg-img/cta.jpg);">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
@@ -578,7 +606,7 @@
                             <p>
                             	Elitecomputers & Branding provides:<br> ✔️Brand New,Certified Factory Refurb and Exuk laptops with Warranty <br>✔️Full set Desktops: CPU,Monitor,Keyboard and mouse. <br>✔️BrandNew phones with ......
 
-                            	<div class="fb-page" data-href="https://www.facebook.com/elitetech001" data-tabs="timeline" data-width="" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/elitetech001" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/elitetech001">Elitetech computer solutions</a></blockquote></div>
+                            	<div class="fb-page" data-href="https://www.facebook.com/elitetech001" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/elitetech001" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/elitetech001">Elitetech computer solutions</a></blockquote></div>
                             </p>
                         </div>
                     </div>

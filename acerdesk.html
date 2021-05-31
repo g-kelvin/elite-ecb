@@ -20,6 +20,32 @@
 </head>
 
 <body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102499061513849");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="r49ibJJ6"></script>
     <!-- Preloader -->
@@ -71,7 +97,7 @@
 
                         <!-- Nav Start -->
                         <div class="classynav">
-                            <ul>
+                          <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about-us.html">About Us</a></li> 
                                 <li><a href="#">Our Products</a>
@@ -81,16 +107,16 @@
                                             <li><a href="hp.html">HP Laptops</a></li>
                                             <li><a href="dell.html">Dell Laptops</a></li>
                                             <li><a href="toshiba.html">Toshiba Laptops</a></li>
-                                            <li><a href="lenovo.html">Lenova Laptops</a></li>
-                                            <li><a href="acerp.html">Acerp Laptops</a></li>
+                                            <li><a href="lenovo.html">Lenov0 Laptops</a></li>
+                                            <li><a href="acer.html">Acer Laptops</a></li>
                                         </ul>
                                         <ul class="single-mega cn-col-4">
                                             <li class="title"><b style="color: red">DESKTOPS</b></li>
                                            <li><a href="hpdesk.html">HP Desktops</a></li>
                                             <li><a href="delldesk.html">Dell Desktops</a></li>
                                             <li><a href="toshibadesk.html">Toshiba Desktops</a></li>
-                                            <li><a href="lenovodesk.html">Lenova Desktops</a></li>
-                                            <li><a href="acerpdesk.html">Acerp Desktops</a></li>
+                                            <li><a href="lenovodesk.html">Lenovo Desktops</a></li>
+                                            <li><a href="acerdesk.html">Acer Desktops</a></li>
                                         </ul>
                                         <ul class="single-mega cn-col-4">
                                             <li class="title"><b style="color: red">MORE ELECTRONICS</b></li>
@@ -112,6 +138,7 @@
                                 </li>
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="contact.html">Contact</a></li>
+                                <li><a href="https://elitecomp.co.ke:2083/" style="color: red">Staff Mails</a></li>
                             </ul>
 
                             <!-- Search Form -->
@@ -191,17 +218,17 @@
                         </div>
                         <!-- Property Content -->
                        <div class="property-content">
-                            <h5>Hp Elite 840 Laptop</h5>
+                            <h5>Acer Desktop</h5>
                             <div class="row">
                                 <div class="col-6">
                                 <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
+                                <small>ROM: 500GB</small><br>
                                 <small>Color: Black</small>
                             </div>
                                 <div class="col-6">
-                                    <small>Processor: Core i3</small><br>
+                                    <small>Processor: Core i5</small><br>
                                     <small>Graphics: Radeon</small><br>
-                                    <small>Size: 14"</small>
+                                    <small>Size: 19"</small>
                                 </div>
                               </div>
                                 <a href="https://wa.me/+254717040531" class="fa fa-whatsapp" style="font-size:24px;color:green"><button type="button" class="btn btn-danger"> Place Order</button></a>
@@ -219,22 +246,22 @@
                                 <span>New</span>
                             </div>
                             <div class="list-price">
-                                <p>Ksh. 45,000</p>
+                                <p>Ksh. 20,000</p>
                             </div>
                         </div>
                         <!-- Property Content -->
                        <div class="property-content">
-                            <h5>Hp Elite 840 Laptop</h5>
+                            <h5>Acer Desktop</h5>
                             <div class="row">
                                 <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
+                                <small>RAM: 4GB</small> <br>
+                                <small>ROM: 300GB</small><br>
                                 <small>Color: Black</small>
                             </div>
                                 <div class="col-6">
-                                    <small>Processor: Core i3</small><br>
-                                    <small>Graphics: Radeon</small><br>
-                                    <small>Size: 14"</small>
+                                    <small>Processor: Pentium</small><br>
+                                    <small>Graphics: Intel HD</small><br>
+                                    <small>Size: 19"</small>
                                 </div>
                               </div>
                                 <a href="https://wa.me/+254717040531" class="fa fa-whatsapp" style="font-size:24px;color:green"><button type="button" class="btn btn-danger"> Place Order</button></a>
@@ -253,7 +280,7 @@
                                 <span>New</span>
                             </div>
                             <div class="list-price">
-                                <p>Ksh. 45,000</p>
+                                <p>Ksh. 35,000</p>
                             </div>
                         </div>
                         <!-- Property Content -->
@@ -261,217 +288,14 @@
                             <h5>Hp Elite 840 Laptop</h5>
                             <div class="row">
                                 <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
+                                <small>RAM: 4GB</small> <br>
+                                <small>ROM: 500GB</small><br>
                                 <small>Color: Black</small>
                             </div>
                                 <div class="col-6">
-                                    <small>Processor: Core i3</small><br>
-                                    <small>Graphics: Radeon</small><br>
-                                    <small>Size: 14"</small>
-                                </div>
-                              </div>
-                                <a href="https://wa.me/+254717040531" class="fa fa-whatsapp" style="font-size:24px;color:green"><button type="button" class="btn btn-danger"> Place Order</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Featured Property -->
-                 <div class="col-12 col-md-6 col-xl-4">
-                    <div class="single-featured-property mb-50">
-                        <!-- Property Thumbnail -->
-                        <div class="property-thumb">
-                            <img src="img/bg-img/acerp-02.png" alt="">
-
-                            <div class="tag">
-                                <span>New</span>
-                            </div>
-                            <div class="list-price">
-                                <p>Ksh. 45,000</p>
-                            </div>
-                        </div>
-                        <!-- Property Content -->
-                       <div class="property-content">
-                            <h5>Hp Elite 840 Laptop</h5>
-                            <div class="row">
-                                <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
-                                <small>Color: Black</small>
-                            </div>
-                                <div class="col-6">
-                                    <small>Processor: Core i3</small><br>
-                                    <small>Graphics: Radeon</small><br>
-                                    <small>Size: 14"</small>
-                                </div>
-                              </div>
-                               <a href="https://wa.me/+254717040531" class="fa fa-whatsapp" style="font-size:24px;color:green"><button type="button" class="btn btn-danger"> Place Order</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Featured Property -->
-                 <div class="col-12 col-md-6 col-xl-4">
-                    <div class="single-featured-property mb-50">
-                        <!-- Property Thumbnail -->
-                        <div class="property-thumb">
-                            <img src="img/bg-img/acerp-02.png" alt="">
-
-                            <div class="tag">
-                                <span>New</span>
-                            </div>
-                            <div class="list-price">
-                                <p>Ksh. 45,000</p>
-                            </div>
-                        </div>
-                        <!-- Property Content -->
-                       <div class="property-content">
-                            <h5>Hp Elite 840 Laptop</h5>
-                            <div class="row">
-                                <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
-                                <small>Color: Black</small>
-                            </div>
-                                <div class="col-6">
-                                    <small>Processor: Core i3</small><br>
-                                    <small>Graphics: Radeon</small><br>
-                                    <small>Size: 14"</small>
-                                </div>
-                              </div>
-                                <a href="https://wa.me/+254717040531" class="fa fa-whatsapp" style="font-size:24px;color:green"><button type="button" class="btn btn-danger"> Place Order</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Featured Property -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="single-featured-property mb-50">
-                        <!-- Property Thumbnail -->
-                        <div class="property-thumb">
-                            <img src="img/bg-img/acerp-01.png" alt="">
-
-                            <div class="tag">
-                                <span>New</span>
-                            </div>
-                            <div class="list-price">
-                                <p>Ksh. 45,000</p>
-                            </div>
-                        </div>
-                        <!-- Property Content -->
-                       <div class="property-content">
-                            <h5>Hp Elite 840 Laptop</h5>
-                            <div class="row">
-                                <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
-                                <small>Color: Black</small>
-                            </div>
-                                <div class="col-6">
-                                    <small>Processor: Core i3</small><br>
-                                    <small>Graphics: Radeon</small><br>
-                                    <small>Size: 14"</small>
-                                </div>
-                              </div>
-                                <a href="https://wa.me/+254717040531" class="fa fa-whatsapp" style="font-size:24px;color:green"><button type="button" class="btn btn-danger"> Place Order</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Featured Property -->
-                 <div class="col-12 col-md-6 col-xl-4">
-                    <div class="single-featured-property mb-50">
-                        <!-- Property Thumbnail -->
-                        <div class="property-thumb">
-                            <img src="img/bg-img/acerp-02.png" alt="">
-
-                            <div class="tag">
-                                <span>New</span>
-                            </div>
-                            <div class="list-price">
-                                <p>Ksh. 45,000</p>
-                            </div>
-                        </div>
-                        <!-- Property Content -->
-                       <div class="property-content">
-                            <h5>Hp Elite 840 Laptop</h5>
-                            <div class="row">
-                                <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
-                                <small>Color: Black</small>
-                            </div>
-                                <div class="col-6">
-                                    <small>Processor: Core i3</small><br>
-                                    <small>Graphics: Radeon</small><br>
-                                    <small>Size: 14"</small>
-                                </div>
-                              </div>
-                                <a href="https://wa.me/+254717040531" class="fa fa-whatsapp" style="font-size:24px;color:green"><button type="button" class="btn btn-danger"> Place Order</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Featured Property -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="single-featured-property mb-50">
-                        <!-- Property Thumbnail -->
-                        <div class="property-thumb">
-                            <img src="img/bg-img/acerp-02.png" alt="">
-
-                            <div class="tag">
-                                <span>New</span>
-                            </div>
-                            <div class="list-price">
-                                <p>Ksh. 45,000</p>
-                            </div>
-                        </div>
-                        <!-- Property Content -->
-                       <div class="property-content">
-                            <h5>Hp Elite 840 Laptop</h5>
-                            <div class="row">
-                                <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
-                                <small>Color: Black</small>
-                            </div>
-                                <div class="col-6">
-                                    <small>Processor: Core i3</small><br>
-                                    <small>Graphics: Radeon</small><br>
-                                    <small>Size: 14"</small>
-                                </div>
-                              </div>
-                                <a href="https://wa.me/+254717040531" class="fa fa-whatsapp" style="font-size:24px;color:green"><button type="button" class="btn btn-danger"> Place Order</button></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Featured Property -->
-                 <div class="col-12 col-md-6 col-xl-4">
-                    <div class="single-featured-property mb-50">
-                        <!-- Property Thumbnail -->
-                        <div class="property-thumb">
-                            <img src="img/bg-img/acerp-01.png" alt="">
-
-                            <div class="tag">
-                                <span>New</span>
-                            </div>
-                            <div class="list-price">
-                                <p>Ksh. 45,000</p>
-                            </div>
-                        </div>
-                        <!-- Property Content -->
-                       <div class="property-content">
-                            <h5>Hp Elite 840 Laptop</h5>
-                            <div class="row">
-                                <div class="col-6">
-                                <small>RAM: 8GB</small> <br>
-                                <small>ROM: 500GBM</small><br>
-                                <small>Color: Black</small>
-                            </div>
-                                <div class="col-6">
-                                    <small>Processor: Core i3</small><br>
-                                    <small>Graphics: Radeon</small><br>
-                                    <small>Size: 14"</small>
+                                    <small>Processor: Celeron</small><br>
+                                    <small>Graphics: Intel 4000</small><br>
+                                    <small>Size: 22"</small>
                                 </div>
                               </div>
                                 <a href="https://wa.me/+254717040531" class="fa fa-whatsapp" style="font-size:24px;color:green"><button type="button" class="btn btn-danger"> Place Order</button></a>
@@ -515,7 +339,7 @@
                             <p>
                                 Elitecomputers & Branding provides:<br> ✔️Brand New,Certified Factory Refurb and Exuk laptops with Warranty <br>✔️Full set Desktops: CPU,Monitor,Keyboard and mouse. <br>✔️BrandNew phones with ......
 
-                               <div class="fb-page" data-href="https://www.facebook.com/elitetech001" data-tabs="timeline" data-width="" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/elitetech001" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/elitetech001">Elitetech computer solutions</a></blockquote></div>
+                               <div class="fb-page" data-href="https://www.facebook.com/elitetech001" data-tabs="timeline" data-width="250" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/elitetech001" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/elitetech001">Elitetech computer solutions</a></blockquote></div>
                             </p>
                         </div>
                     </div>
